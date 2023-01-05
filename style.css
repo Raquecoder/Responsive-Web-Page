@@ -1,0 +1,198 @@
+body{
+    margin:0;
+    padding:0;
+    font-size:16px;
+    font-family:'Unbutu',sans-serif;
+}
+
+/*---Typography--*/
+
+.title{
+
+}
+h1 {
+    color:#143774;
+    margin:0;
+    font-family: 'lora',sans-serif;
+    font-weight: 400px;
+    
+}
+p{
+    color:#1792d2;
+    padding-top: 10px;
+    margin:0;
+    padding-top: 2px;
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+
+/*---Layout---*/
+
+header{
+    background-color: #f3f3f3;
+    padding-bottom: .5em;
+}
+
+
+
+.container{
+  width:90%;
+  max-width: 900px;
+  margin:0 auto;
+  
+}
+
+.container-flex{
+    display:flex;
+    justify-content: space-between;
+  
+}
+
+@media(max-width:675px){
+    .container-flex{
+         
+        flex-direction: column;
+    }
+    header{
+        text-align: center;}
+
+}
+
+
+/*---navigation---*/
+nav ul{
+  
+  display:flex;
+  justify-content: center;
+
+}
+nav li{
+  display:inline;
+  list-style-type: none;
+  margin-left:2em;
+}
+nav a{
+  color:#707070;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0;
+  
+}
+nav a:hover,
+nav a:focus{
+color:#1792d2;
+
+
+}
+
+.current-page{
+    border-bottom: 1px solid#707070;
+}
+.current-page:hover{
+    color:#707070;
+}
+@media(max-width:675px){
+  nav ul {
+      flex-direction: column;
+      padding:1em;
+  }
+  nav li{
+    margin:.5em 0;
+  }
+}
+
+main{
+  text-align: left;
+  
+}
+
+h2{
+  color:#143774;
+}
+span{
+   font-weight: bolder;
+}
+article{
+  color:#707070;
+}
+
+.second{
+  color:#1792d2;
+  text-decoration:none;
+}
+/* article section*/
+.article{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+.image{
+  max-width: 100%;
+  min-width: none;
+}
+
+.text{
+  text-align: left;
+  margin-left:1em;
+  line-height: 28px;
+  
+}
+.texto{
+  color:#707070;
+  text-transform: capitalize;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blue-text{
+  color:#143774;
+  text-transform: capitalize;
+}
+
+
+.aside{
+
+}
+.about-me{
+  box-shadow: -10px 10px blue;
+}
+.recent-post{
+  box-shadow:-10px 10px red;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #143774;
+    margin-top:35em;
+}
+.footer{
+    color:#707070;
+    text-transform: capitalize;
+    text-align: center;
+}
